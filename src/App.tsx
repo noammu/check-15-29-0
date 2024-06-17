@@ -1,29 +1,39 @@
-import styles from './App.module.scss';
-import ViteSvg from './assets/vite.svg';
-import TypescriptSvg from './assets/typescript.svg';
+import { ElemTree } from './components/elem-tree/elem-tree';
+import { AddThisComp } from './components/add-this-comp/add-this-comp';
+import { Griddy } from './components/griddy/griddy';
+import { AbuseStylePanel } from './components/abuse-style-panel/abuse-style-panel';
+import App_module from './App.module.scss';
+import Classnames from 'classnames';
 
 function App() {
     return (
-        <div className={styles.App}>
-            <h2>Welcome to your App Component 🎉</h2>
-            <span>
-                Double click to edit App component
-                <br />
-                &amp; drag here elements from + Add <b>Elements</b> Panel
-            </span>
-            <p
-                style={{
-                    fontSize: '12px',
-                    marginTop: '80px',
-                    display: 'flex',
-                    gap: '3px',
-                    justifyContent: 'center',
-                }}
-            >
-                This project is using <img src={ViteSvg} width="12" />+
-                <img src={TypescriptSvg} width="12" />
-                Visit vitejs.dev to learn more.
-            </p>
+        <div>
+            <AbuseStylePanel
+                className={Classnames(
+                    App_module.cvnb,
+                    App_module.sdf,
+                    App_module.xbgnhjhju,
+                    App_module.gh,
+                    App_module.cvbnxcsd,
+                    App_module.aaswq,
+                    App_module.erujk,
+                    App_module.klpo,
+                    App_module.hjbnmfdg,
+                    App_module.xcvb,
+                    App_module.fghkui,
+                    App_module.ljkl,
+                    App_module.nmnm,
+                    App_module.qweqa,
+                    App_module.qweqassssss,
+                )}
+            />
+            <Griddy />
+            <div>
+                <ElemTree />
+            </div>
+            <div>
+                <AddThisComp />
+            </div>
         </div>
     );
 }
