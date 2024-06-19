@@ -18,10 +18,24 @@
       "description": "Run install",
       "command": "npm i",
       "trigger": ["checkout", "pull", "setup"]
+    },
+    "build": {
+      "title": "Build Project",
+      "description": "Build the project",
+      "command": "npm run build"
+    },
+    "install & build": {
+      "title": "Initialize Project",
+      "description": "Install dependencies and build project",
+      "run": ["install", "build"],
+      "trigger": ["checkout", "pull", "setup"]
     }
   },
   "styling": {
     "solution": "scss modules"
   },
-  "svgLoader": "asset"
+  "svgLoader": "asset",
+  "addPanel": {
+    "assets": ["@codux-boards/react-semantic"]
+  }
 }
